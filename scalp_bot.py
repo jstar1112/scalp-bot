@@ -161,6 +161,9 @@ async def scan_bitget():
 
 
 async def main_loop():
+    # === TEST ALERT FROM RENDER (DELETE AFTER YOU SEE IT) ===
+    await send_alert("RENDER/USDT", 9.9, 25000000, 5000000, 88, 0.987654)
+
     while True:
         start = time.time()
         await scan_bitget()
